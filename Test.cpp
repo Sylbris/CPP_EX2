@@ -55,7 +55,7 @@ TEST_CASE("Good post") {
     CHECK(board.read(/*row=*/99, /*column=*/201, Direction::Horizontal, /*length=*/3) == "___");
 
     //Check diff lengths
-    CHECK(board.read(/*row=*/99, /*column=*/201, Direction::Vertical, /*length=*/5) == "_b___");
+    CHECK(board.read(/*row=*/99, /*column=*/201, Direction::Vertical, /*length=*/28) == "_b__________________________");
     CHECK(board.read(/*row=*/99, /*column=*/201, Direction::Vertical, /*length=*/1) == "_");
 
     //Overwrite an existing post
