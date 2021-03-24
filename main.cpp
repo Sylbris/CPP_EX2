@@ -7,7 +7,8 @@
 #include <chrono>
 
 using namespace std;
-using ariel::Direction;
+using namespace ariel;
+//using ariel::Direction;
 
 //using ANSI color codes
 const string red_line = "\e[1;31m"; 
@@ -15,13 +16,10 @@ const string colors[] {"\e[1;92m", "\e[1;93m", "\e[1;94m", "\e[1;95m", "\e[1;96m
 
 int main() {
     srand((unsigned)time(0));
-    ariel::Board board;
+    Board board;
     string message;
 
-    /*
-    a = row
-    b = column
-    */
+    //a - row , b - col
     unsigned int a,b,dir,len;
     for (int i=0;true;i++) {
         system("clearing");
