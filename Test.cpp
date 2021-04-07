@@ -72,8 +72,8 @@ TEST_CASE("Good post") {
     CHECK(board.read(/*row=*/100, /*column=*/200, Direction::Vertical, /*length=*/3) == "_oh");
     CHECK(board.read(/*row=*/100, /*column=*/200, Direction::Horizontal, /*length=*/4) == "____");
     board.post(/*row=*/105, /*column=*/200, Direction::Vertical, "ho");
-    CHECK(board.read(/*row=*/106, /*column=*/200, Direction::Vertical, /*length=*/3) == "_ho");
-    CHECK(board.read(/*row=*/106, /*column=*/200, Direction::Horizontal, /*length=*/3) == "_ho");
+    CHECK(board.read(/*row=*/106, /*column=*/200, Direction::Vertical, /*length=*/3) == "o__");
+    CHECK(board.read(/*row=*/106, /*column=*/200, Direction::Horizontal, /*length=*/3) == "o__");
 
     //Border
     board.post(/*row=*/0, /*column=*/0, Direction::Horizontal, "rps");

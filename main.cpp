@@ -8,7 +8,7 @@
 
 using namespace std;
 using namespace ariel;
-//using ariel::Direction;
+
 
 //using ANSI color codes
 const string red_line = "\e[1;31m"; 
@@ -54,8 +54,6 @@ int main() {
             else{
                 cout << board.read(a, b, Direction::Horizontal, len) << endl;
             }
-            cout << "add more content to the board to continue:" << endl;
-            cin >> a;
         }
     }
 }
